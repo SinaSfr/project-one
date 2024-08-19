@@ -35,6 +35,56 @@ body{
     align-items: center;
     justify-content: space-around;
 }
+.back-modal{
+    width: 28rem;
+    height: 40rem;
+    z-index: 11;
+    background-color: rgb(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 6px 1px rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    position: fixed;
+    right: 3rem;
+    display: none;
+
+}
+.modal-signin{
+    width: 28rem;
+    height: 40rem;
+    background-color: white;
+    box-shadow: 1px 1px 6px 1px rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    position: fixed;
+    right: 3rem;
+    display: none;
+}
+.dis-f{
+    display: flex;
+    justify-content: center;
+}
+.modal-web{
+
+}
+.opa-25{
+
+}
+.modal-img{
+    width: 4rem;
+    height: 4rem;
+}
+.modal-id-wrapper{
+
+}
+.fsize-13{
+
+}
+.fweight-bold{
+
+}
+.opa-70{
+
+}
 .social-network-container{
     display: flex;
     align-items: center;
