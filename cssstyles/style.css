@@ -1,0 +1,289 @@
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+    height: 100%;
+}
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+body{
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: "vazir";
+}
+.container{
+    max-width: 140rem;
+}
+.header-container{
+   margin: 3rem;
+}
+.logo-tools-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.logo-wrapper{
+    display: flex;
+}
+.site-logo{
+    width: 26rem;
+}
+.tools-wrapper{
+    width: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-network-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-network-icons{
+    width: 26rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.width-icon{
+    width: 2rem;
+    height: 2rem;
+}
+.header-btns{
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.follow-btn{
+    width: 11rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 2rem;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0);
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.follow-btn:hover{
+    background-color: rgb(0, 0, 0, 0.04);
+}
+.message-plus-btn{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    cursor: pointer;
+}
+.menu{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.5rem;
+}
+nav.menu a{
+    width: auto;
+    text-decoration: none;
+    color: black;
+    opacity: 70%;
+    white-space: nowrap;
+    margin: 0 1.5rem;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+}
+nav.menu a.home-menu{
+    opacity: 1;
+    font-weight: bold;
+}
+nav a:hover{
+    border-radius: 0.7rem;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+div.social-network-icons a,
+div.tools-wrapper a{
+    width: 3.8rem;
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.social-network-icons a:hover,
+div.tools-wrapper a:hover{
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+.profile-informations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 0.4rem;
+}
+.profile-informations *{
+    margin: 0;
+}
+.profile-informations h1{
+    line-height: 3rem;
+}
+.profile-img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+.profile-name{
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.profile-followers{
+    font-size: 1.4rem;
+    opacity: 70%;
+}
+.profile-skils{
+
+}
+.text-align{
+    display: block;
+    text-align: center;
+}
+.header-hr{
+    opacity: 25%;
+    margin-top: 4rem;
+}
+.blog-posts-wrapper{
+    width: auto;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.blog-posts-wrapper a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.pinned-wrapper{
+    display: flex;
+    width: 75rem;
+}
+.pinned-title{
+    font-size: 1.8rem;
+    color: blue;
+    font-weight: bold;
+}
+.post-wrapper{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+.blog-information{
+
+}
+.blog-information span{
+    color: rgb(100, 116, 139);
+}
+.blog-information h2{
+    width: 44rem;
+    margin: 0;
+    line-height: 4rem;
+}
+.blog-title{
+    font-size: 3.2rem;
+}
+.blog-details{
+    display: flex;
+    gap: 1rem;
+}
+.blog-details span{
+    font-size: 1.5rem;
+}
+.blog-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.book-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.blog-summary{
+    width: 44rem;
+    margin: 0;
+    font-size: 1.6rem;
+}
+.blog-summary a{
+    opacity: 80%;
+}
+.blog-image{
+    width: 28rem;
+    height: 14rem;
+    border-radius: 0.7rem;
+}
+footer{
+    background-color: rgb(227, 242, 253);
+}
+.footer-links-wrapper{
+    width: 84rem;
+    height: 14rem;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10rem auto 4rem;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+.copy-right-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+.copy-right-wrapper *{
+    color: rgb(71, 85, 105);
+}
+.componey-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+    margin: 4rem;
+}
+.componey-wrapper div{
+    color: rgb(71, 85, 105);
+    font-size: 1.5rem;
+}
+.place-writer span{
+    color: rgb(71, 85, 105);
+    font-weight: bold;
+}
+.place-writer{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem 0.5rem;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+.place-writer:hover{
+    border: 1px solid rgb(0, 0, 0, 0.4);
+}
+.place-writer:hover span{
+    color: rgb(0, 0, 0);
+}
+.mb-8{
+    margin-bottom: 8rem;
+}

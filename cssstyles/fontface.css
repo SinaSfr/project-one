@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "parastoo";
+    src: url(/fonts/Parastoo.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url(/fonts/Vazir.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "sahel";
+    src: url(/fonts/Sahel.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "shabnam";
+    src: url(/fonts/Shabnam.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "tanha";
+    src: url(/fonts/Tanha.woff2) format("woff2");
+}
