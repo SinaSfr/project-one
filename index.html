@@ -17,12 +17,14 @@
                         <img src="images/39b7gc3dT.png" alt="" class="site-logo">
                     </div>
                     <div class="tools-wrapper">
-                        <a href="" target="_blank"><img src="icons/search.svg" alt=""></a>
-                        <a href="" target="_blank"><img src="icons/moon.svg" alt=""></a>
-                        <a href="" target="_blank"><img src="icons/chevronDown.svg" alt=""></a>
+                        <button class="tools-btn"><img src="icons/search.svg" alt=""></button>
+                        <button class="tools-btn"><img src="icons/moon.svg" alt=""></button>
+                        <button class="tools-btn"><img src="icons/chevronDown.svg" alt=""></button>
                     </div>
                 </div>
-              <div class="back-modal">
+              <div class="back-modal">  <!--background for hide content -->
+
+                <!-- modal for sign-in -->
                 <div class="modal-signin">
                     <a href="" class="modal-title">
                         <img src="icons/rhombusBlue.svg" alt="" class="width-icon">
@@ -52,9 +54,21 @@
                         <p class="opa-60 color-black">Start publishing on Web</p>
                     </a>
                 </div>
+                <!-- end of modal sign-in -->
               </div>
         
                 <div class="social-network-container">
+                    <div class="back-search-modal">
+                        <!-- modal for search btn -->
+                        <div class="search-modal">
+                            <input type="text" name="search-input" placeholder="Start typing to search" class="search-input">
+                            <div class="search-article-wrapper">
+                                <img src="icons/search.svg" alt="" class="width-icon">
+                                <h2 class="searchbox-title">Search articles from this blog</h2>
+                            </div>
+                         </div>
+                         <!-- end of modal search btn -->
+                    </div>
                     <div class="social-network-icons">
                         <a href="" target="_blank"><img src="icons/X.svg" alt="" class="width-icon"></a>
                         <a href="" target="_blank"><img src="icons/git.svg" alt="" class="width-icon"></a>
