@@ -4,6 +4,8 @@ const darkModeBtn = $.querySelector(".darkmode-btn");
 const ChevronDownBtn = $.querySelector(".chevrondown-btn");
 const backSearchModal = $.querySelector(".back-search-modal");
 const backSigninModal = $.querySelector(".back-modal");
+const questionIcon = $.querySelector(".question-icon");
+const pencilIcon = $.querySelector(".pencil-icon");
 const blogPostsWrapper = $.querySelector(".blog-posts-wrapper");
 const profileInformationsSection = $.querySelector(".profile-informations-section");
 
@@ -33,6 +35,15 @@ backSearchModal.addEventListener("click", event => {
 // darkmode started
 function darkMode(){
    $.body.classList.toggle("darkmode")
+   if($.body.classList.contains("darkmode")){
+       darkModeBtn.firstChild.src = "icons/sun.svg"
+       questionIcon.setAttribute("stroke", "#f8fafc");
+       pencilIcon.setAttribute("stroke", "#f8fafc");
+    } else{
+        darkModeBtn.firstChild.src = "icons/moon.svg"
+        questionIcon.setAttribute("stroke", "#0000004d");
+        pencilIcon.setAttribute("stroke", "#0000004d");
+    }
 }
 darkModeBtn.addEventListener("click", darkMode)
 // darkmode ended
