@@ -32,9 +32,11 @@ backSearchModal.addEventListener("click", event => {
 
 // darkmode started
 function darkMode(){
-    blogPostsWrapper.style.backgroundColor = "#020617"
+   $.body.classList.toggle("darkmode")
 }
 darkModeBtn.addEventListener("click", darkMode)
+// darkmode ended
+
 // sign in modal started
 function openSigninModal() {
     backSigninModal.style.display = "block"

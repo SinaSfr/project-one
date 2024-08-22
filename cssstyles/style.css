@@ -11,7 +11,24 @@ body{
     font-size: 1.6rem;
     font-family: "vazir";
 }
-.dark-mode
+.darkmode section.profile-informations-section{
+    background-color: #020617;
+    opacity: 90%;
+}
+.darkmode div.blog-posts-wrapper{
+    background-color: #020617;
+}
+.darkmode a.profile-name,
+.darkmode a.blog-title,
+.darkmode p.profile-skils,
+.darkmode p.profile-followers{
+    color: rgb(255, 255, 255);
+}
+.darkmode a.blog-summary,
+.darkmode span.blog-date,
+.darkmode span.blog-time{
+    color: rgb(148, 163, 184);
+}
 .container{
     max-width: 140rem;
 }
@@ -385,6 +402,7 @@ nav a:hover{
     height: 1.5rem;
 }
 .blog-summary{
+    display: block;
     width: 44rem;
     margin: 0;
     font-size: 1.6rem;
