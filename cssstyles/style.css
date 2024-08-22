@@ -11,12 +11,12 @@ body{
     font-size: 1.6rem;
     font-family: "vazir";
 }
+.dark-mode
 .container{
     max-width: 140rem;
-    padding: 4rem 4rem 0;
 }
 .header-container{
-   /* margin: 3rem; */
+   margin: 3rem;
 }
 .logo-tools-wrapper{
     display: flex;
@@ -47,14 +47,15 @@ body{
     cursor: pointer;
 }
 .back-modal{
-    width: 30rem;
-    height: 41rem;
+    width: 100%;
+    height: 100%;
     z-index: 11;
-    background-color: rgb(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255, 0);
     border-radius: 1rem;
     position: fixed;
-    right: 3rem;
-    top: 10rem;
+    right: 0;
+    top: 0;
+    left: 0;
     display: none;
 
 }
@@ -67,9 +68,8 @@ body{
     border: 1px solid rgb(0, 0, 0, 0.1);
     border-radius: 1rem;
     position: fixed;
-    right: 3rem;
+    right: 5rem;
     top: 10rem;
-    display: none;
 }
 .modal-signin a{
     text-decoration: none;
@@ -107,6 +107,9 @@ body{
 }
 .modal-id-wrapper{
 
+}
+.pad-t-15{
+    padding-right: 15px;
 }
 mb-20{
     margin-bottom: 2rem;
@@ -169,6 +172,7 @@ mb-20{
 .search-modal{
     width: 92rem;
     height: 16rem;
+    z-index: 12;
     background-color: rgb(255, 255, 255);
     border-radius: 1.5rem;
     padding: 2.5rem 3rem 3rem;
@@ -176,7 +180,6 @@ mb-20{
     left: 50%;
     top: 12.6rem;
     transform: translateX(-50%);
-    display: none;
 }
 .search-input{
     width: 100%;
