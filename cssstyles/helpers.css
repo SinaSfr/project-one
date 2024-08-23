@@ -1,0 +1,45 @@
+.pad-t-15{
+    padding-right: 15px;
+}
+mb-20{
+    margin-bottom: 2rem;
+}
+.fweight-bold{
+    font-weight: bold;
+}
+.opa-60{
+    opacity: 60%;
+}
+.color-black-7{
+    color: rgb(0, 0, 0, 0.8);
+}
+.color-black{
+    color: rgb(0, 0, 0);
+}
+.pad-t-3{
+    padding-top: 0.3rem;
+}
+.mb-8{
+    margin-bottom: 8rem;
+}
+.dis-flex{
+    display: flex;
+}
+.al-items-center{
+    align-items: center;
+}
+.just-cont-center{
+    justify-content: center;
+}
+.just-cont-spacebet{
+    justify-content: space-between;
+}
+.gap-13{
+    gap: 1.3rem;
+}
+.width-960{
+    width: 96rem;
+}
+.flex-dir-col{
+    flex-direction: column;
+}
