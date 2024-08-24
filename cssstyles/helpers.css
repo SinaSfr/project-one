@@ -25,20 +25,23 @@
 .dis-flex{
     display: flex;
 }
-.al-items-center{
+.ai-center{
     align-items: center;
 }
-.just-cont-center{
+.jc-center{
     justify-content: center;
 }
-.just-cont-spacebet{
+.jc-spacebet{
     justify-content: space-between;
 }
-.gap-13{
-    gap: 1.3rem;
+.gap-12{
+    gap: 1.2rem;
 }
 .gap-5{
     gap: 0.5rem;
+}
+.gap-20{
+    gap: 2rem;
 }
 .width-960{
     width: 96rem;
@@ -58,6 +61,6 @@
 .back-white{
     background-color: rgb(255, 255, 255);
 }
-.font-s-13{
-    font-size: 1.3rem;
+.font-s-12{
+    font-size: 1.2rem;
 }

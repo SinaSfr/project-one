@@ -550,3 +550,31 @@ footer{
     border-radius: 4rem;
     margin-left: -1.2rem;
 }
+.catalog-of-article{
+    width: 80rem;
+    height: 53rem;
+    padding: 0 1.6rem 1.6rem 2rem;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 0.6rem;
+}
+.catalog-of-article a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: rgb(71, 85, 105);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+.catalog-of-article a:hover{
+    background-color: rgb(240, 240, 240);
+}
+.catalog-of-article img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.section-of-catalog{
+    width: 100%;
+    padding: 0.5rem 0;
+}
