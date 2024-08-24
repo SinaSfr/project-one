@@ -1,8 +1,8 @@
 .pad-t-15{
     padding-right: 15px;
 }
-mb-20{
-    margin-bottom: 2rem;
+.mb-20{
+    margin: 0 0 2rem 0;
 }
 .fweight-bold{
     font-weight: bold;
@@ -37,9 +37,27 @@ mb-20{
 .gap-13{
     gap: 1.3rem;
 }
+.gap-5{
+    gap: 0.5rem;
+}
 .width-960{
     width: 96rem;
 }
 .flex-dir-col{
     flex-direction: column;
+}
+.font-s-18{
+    font-size: 1.8rem;
+}
+.font-w-700{
+    font-weight: 700;
+}
+.color-white{
+    color: rgb(255, 255, 255);
+}
+.back-white{
+    background-color: rgb(255, 255, 255);
+}
+.font-s-13{
+    font-size: 1.3rem;
 }

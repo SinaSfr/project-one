@@ -75,7 +75,8 @@ backSigninModal.addEventListener("click", event => {
 }
 
 // sticky header
-let lastScrollTop = 0
+if($.getElementById("sticky-header")){
+    let lastScrollTop = 0
 window.addEventListener("scroll", () => {
     let currentScrollTop = window.pageYOffset || $.documentElement.scrollTop;
     if(currentScrollTop > lastScrollTop){
@@ -93,6 +94,7 @@ chevronLeftBtn.addEventListener("click", () => {
 })
 // end of chevronleft evented to homepage
 
+}
 
 // fetch footer for everypage
 fetch("../html/footer.html")

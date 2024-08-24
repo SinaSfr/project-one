@@ -6,12 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../cssstyles/normalize.css">
     <link rel="stylesheet" href="../cssstyles/fontface.css">
+     <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900">
     <link rel="stylesheet" href="../cssstyles/style.css">
     <link rel="stylesheet" href="../cssstyles/helpers.css">
 </head>
 <body>
     <div class="container">
-        <header class="header-page2">
+        <header class="header-page2" id="sticky-header">
             <div class="header-container-page2">
                 <div class="dis-flex al-items-center gap-13">
                     <button class="tools-btn"><img src="../icons/chevronleft.svg" alt="" class="chevronleft-btn width-icon"></button>
@@ -84,11 +85,43 @@
         <main>
             <article>
                 <div class="dis-flex al-items-center flex-dir-col">
-                    <div class="width-960">
+                    <div class="width-960 mb-20">
                         <img src="../images/ffITOVaG6.png" alt="" class="width-960">
                     </div>
                     <div>
-                        <h1 class="article-title">Commit Like a Pro</h1>
+                        <h1 class="article-title mb-20">Commit Like a Pro</h1>
+                    </div>
+                    <div class="dis-flex gap-13 mb-20">
+                        <div class="dis-flex al-items-center gap-13">
+                            <img src="../images/R_2.png" alt="" class="modal-img">
+                            <span class="font-s-18 font-w-700">AliReza DoostMohammadi</span>
+                        </div>
+                        <div class="dis-flex al-items-center gap-13">
+                            <span class="font-s-18 font-w-700">·</span>
+                            <span class="font-s-18">Apr 29, 2022</span>
+                            <span class="font-s-18 font-w-700">·</span>
+                            <div class="dis-flex al-items-center gap-5">
+                                <img src="../icons/book.svg" alt="" class="width-icon">
+                                <span class="font-s-18">5 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dis-flex al-items-center gap-13 mb-20">
+                        <div class="featured-wrapper">
+                            <img src="../icons/featured.svg" alt="" class="width-icon">
+                            <span class="color-white">Featured on daily.dev</span>
+                        </div>
+                        <button class="people-like-btn">
+                            <div>
+                                <img src="../icons/twohearts.svg" alt="" class="width-icon">
+                            </div>
+                            <div class="dis-flex">
+                                <img src="../images/R_2.png" alt="" class="rounded-img">
+                                <img src="../images/R_2.png" alt="" class="rounded-img">
+                                <img src="../images/R_2.png" alt="" class="rounded-img">
+                                <div class="rounded-img back-white font-s-13 dis-flex al-items-center">+45</div>
+                            </div>
+                        </button>
                     </div>
                 </div>
             </article>
