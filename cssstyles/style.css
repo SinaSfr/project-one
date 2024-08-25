@@ -9,7 +9,7 @@ html{
 body{
     line-height: 1.6;
     font-size: 1.6rem;
-    font-family: "meriiweather";
+    font-family: "vazir";
 }
 .darkmode div.search-modal,
 .darkmode div.blog-posts-wrapper{
@@ -552,29 +552,65 @@ footer{
 }
 .catalog-of-article{
     width: 80rem;
-    height: 53rem;
     padding: 0 1.6rem 1.6rem 2rem;
     border: 1px solid rgb(0, 0, 0, 0.2);
     border-radius: 0.6rem;
 }
-.catalog-of-article a{
+.catalog-of-article h2{
+    color: rgb(0, 0, 0, 0.8);
+}
+.catalog-of-article p{
+    margin: 0;
+}
+.catalog-of-article div{
     width: 100%;
+    border-radius: 0.5rem;
+    padding: 0 0 0 1.6rem;
+}
+.catalog-of-article div:hover,
+.catalog-of-article a:hover{
+    background-color: rgb(240, 240, 240);
+}
+.catalog-of-article a{
     display: flex;
     align-items: center;
     gap: 1rem;
     text-decoration: none;
-    color: rgb(71, 85, 105);
     border-radius: 0.5rem;
-    padding: 0.5rem 0 0.5rem 1rem;
-}
-.catalog-of-article a:hover{
-    background-color: rgb(240, 240, 240);
+    font-size: 1.8rem;
+    color: rgb(71, 85, 105);
+    padding: 0.8rem 0;
 }
 .catalog-of-article img{
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
 }
-.section-of-catalog{
-    width: 100%;
-    padding: 0.5rem 0;
+.article-information{
+    width: 80rem;
+    margin: 0 auto;
+}
+.article-information h3{
+    font-size: 2.8rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+.article-information h4{
+    font-size: 2.2rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+.article-information p{
+    font-size: 2rem;
+}
+.article-social-btn{
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.article-social-btn:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10rem;
 }
