@@ -10,8 +10,12 @@ const questionIcon = $.querySelector(".question-icon");
 const pencilIcon = $.querySelector(".pencil-icon");
 const chevronLeftBtn = $.querySelector(".chevronleft-btn");
 const bars3Btn = $.querySelector(".bars3-btn");
+const xIconBtn = $.querySelector(".x-icon-btn");
 const blogPostsWrapper = $.querySelector(".blog-posts-wrapper");
 const profileInformationsSection = $.querySelector(".profile-informations-section");
+const overlayNavbar = $.querySelector(".overlay-navbar");
+const navbarWrapper = $.querySelector(".navbar-wrapper")
+
 
 
 
@@ -20,13 +24,13 @@ if(header){
 function openSearchModal() {
     backSearchModal.style.display = "block"
     $.body.style.overflow = "hidden"
-    $.body.classList.add("pad-t-15");
+    $.body.classList.add("pad-r-15");
 }
 
 function closeSearchModal() {
     backSearchModal.style.display = "none"
     $.body.style.overflow = "auto"
-    $.body.classList.remove("pad-t-15");
+    $.body.classList.remove("pad-r-15");
 }
 
 searchBtn.addEventListener("click", openSearchModal);
@@ -35,7 +39,7 @@ backSearchModal.addEventListener("click", event => {
         closeSearchModal()
     }
 })
-// search modal ended
+
 
 // darkmode started
 function darkMode(){
@@ -51,19 +55,19 @@ function darkMode(){
     }
 }
 darkModeBtn.addEventListener("click", darkMode)
-// darkmode ended
+
 
 // sign in modal started
 function openSigninModal() {
     backSigninModal.style.display = "block"
     $.body.style.overflow = "hidden"
-    $.body.classList.add("pad-t-15");
+    $.body.classList.add("pad-r-15");
 }
 
 function closeSigninModal() {
     backSigninModal.style.display = "none"
     $.body.style.overflow = "auto"
-    $.body.classList.remove("pad-t-15");
+    $.body.classList.remove("pad-r-15");
 }
 ChevronDownBtn.addEventListener("click", openSigninModal)
 backSigninModal.addEventListener("click", event => {
@@ -71,8 +75,10 @@ backSigninModal.addEventListener("click", event => {
         closeSigninModal()
     }
 })
-// sign in modal ended
+
 }
+
+// page2 js code
 
 // sticky header
 if($.getElementById("sticky-header")){
@@ -86,13 +92,31 @@ window.addEventListener("scroll", () => {
     }
     lastScrollTop = currentScrollTop
 })
-// end sticky header
 
-// chevronleft evented to homepage
+
+// chevronleft go to homepage
 chevronLeftBtn.addEventListener("click", () => {
     window.location.href = "/"
 })
-// end of chevronleft evented to homepage
+
+
+// navbar started
+function showNavbar() {
+    overlayNavbar.classList.add("show");
+    navbarWrapper.style.transform = "translateX(0)";
+    $.body.style.overflow = "hidden";
+    $.body.classList.add("pad-r-15");
+    
+}
+function hideNavbar() {
+    overlayNavbar.classList.remove("show");
+    navbarWrapper.style.transform = "translateX(-100%)";
+    $.body.style.overflow = "auto";
+    $.body.classList.remove("pad-r-15");
+}
+bars3Btn.addEventListener("click", showNavbar);
+overlayNavbar.addEventListener("click", hideNavbar);
+xIconBtn.addEventListener("click", hideNavbar);
 
 }
 
@@ -103,4 +127,3 @@ fetch("../html/footer.html")
         $.getElementById("footer-place").innerHTML = data;
     })
     .catch(err => console.error(err))
-    // end fetch footer

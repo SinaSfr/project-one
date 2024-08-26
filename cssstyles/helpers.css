@@ -1,5 +1,5 @@
 /* padding */
-.pad-t-15{
+.pad-r-15{
     padding-right: 15px;
 }
 .pad-0{
@@ -25,6 +25,18 @@
 .mb-20{
     margin: 0 0 2rem 0;
 }
+.my-30{
+    margin: 5rem 0;
+}
+.m-0{
+    margin: 0;
+}
+.mx-auto{
+    margin: 0 auto;
+}
+.m-30{
+    margin: 3rem;
+}
 /*  */
 /* font-size */
 .font-s-18{
@@ -33,9 +45,15 @@
 .font-s-12{
     font-size: 1.2rem;
 }
+.font-s-30{
+    font-size: 3rem;
+}
+.font-s-20{
+    font-size: 2rem;
+}
 /*  */
 /* font-weight */
-.fweight-bold{
+.bold{
     font-weight: bold;
 }
 /*  */
@@ -70,8 +88,11 @@
 .jc-center{
     justify-content: center;
 }
-.jc-spacebet{
+.jc-sb{
     justify-content: space-between;
+}
+.as-fstart{
+    align-self: flex-start;
 }
 /*  */
 /* gap */
@@ -89,12 +110,15 @@
 .max-wid-960{
     max-width: 96rem;
 }
+.wid-810{
+    width: 61rem;
+}
 .width-26{
     width: 2.6rem;
 }
 /*  */
 /* height */
-height-26{
+.height-26{
     height: 2.6rem;
 }
 /*  */
@@ -106,3 +130,6 @@ height-26{
     border-radius: 10rem;
 }
 /*  */
+.text-center{
+    text-align: center;
+}

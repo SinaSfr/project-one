@@ -217,7 +217,6 @@ body{
     border: 1px solid rgb(0, 0, 0, 0.1);
     border-radius: 4rem;
     padding-left: 2rem;
-    /* outline: 1px solid rgb(37 99 235); */
 }
 .search-article-wrapper{
     display: flex;
@@ -308,7 +307,7 @@ nav.menu a.home-menu{
     opacity: 1;
     font-weight: bold;
 }
-nav a:hover{
+nav.menu a:hover{
     border-radius: 0.7rem;
     background-color: rgb(0, 0, 0, 0.1);
 }
@@ -499,7 +498,12 @@ footer{
 .place-writer:hover span{
     color: rgb(0, 0, 0);
 }
-/* page2 style */
+
+
+        /* page2 style */
+
+
+
 .header-page2{
     position: sticky;
     top: 0;
@@ -515,6 +519,64 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 5rem;
+}
+.overlay-navbar{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    /* right: 0; */
+    /* left: 0; */
+    top: 0;
+    transition: all 300ms ease-in-out;
+}
+.overlay-navbar.show{
+    visibility: visible;
+    opacity: 1;
+}
+.navbar-wrapper{
+    width: 34rem;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-in-out;
+    z-index: 101;
+    
+}
+.x-icon-btn{
+    background: rgb(255, 255, 255);
+    width: 3.8rem;
+    height: 3.8rem;
+    border: none;
+    padding-top: 0.6rem;
+}
+.x-icon-btn:hover{
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 10rem;
+}
+.nav-link-wrapper{
+    padding: 4rem 1.6rem 4rem 3.2rem;
+    overflow-y: auto;
+}
+nav.sidebar a{
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    color: rgb(51, 65, 85);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+nav.sidebar a:hover{
+    background-color: rgb(240, 240, 240);
 }
 .site-logo-page2{
     width: 17.5rem;
@@ -613,4 +675,73 @@ footer{
 .article-social-btn:hover{
     background-color: rgb(240, 240, 240);
     border-radius: 10rem;
+}
+.signin-inp{
+    width: 50rem;
+    border-width: 1px 0 1px 1px;
+    border-radius: 1.2rem 0 0 1.2rem;
+    outline: none;
+    padding: 2.4rem 0rem 2.4rem 2rem;
+    font-size: 1.8rem;
+}
+.signin-inp-btn{
+    border-width: 1px 1px 1px 0;
+    border-radius: 0 1.2rem 1.2rem 0;
+    padding: 2.4rem 2.5rem;
+    background-color: rgb(15, 23, 42);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.link-wrapper{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 6rem;
+    gap: 2rem;
+}
+.link-wrapper a{
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0, 0.7);
+    font-weight: bold;
+    padding: 0.6rem 0.8rem 0.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+}
+.link-wrapper a:hover{
+    background-color: rgb(230, 230, 230);
+}
+.writter-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+.writter-wrapper h3{
+    color: rgb(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+.writter-wrapper button{
+    width: 8rem;
+    height: 4rem;
+    background-color: transparent;
+    color: rgb(0, 0, 255);
+    border: 1px solid rgb(0, 0, 255);
+    border-radius: 10rem;
+    text-decoration: none;
+    padding-top: 0.5rem;
+    cursor: pointer;
+}
+.writter-wrapper button:hover{
+    background-color: rgb(219 234 254);
+}
+.writter-name{
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
 }
