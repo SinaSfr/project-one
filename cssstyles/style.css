@@ -12,7 +12,8 @@ body{
     font-family: "vazir";
 }
 .darkmode div.search-modal,
-.darkmode div.blog-posts-wrapper{
+.darkmode div.blog-posts-wrapper,
+.darkmode main.main-page2{
     background-color: rgb(2, 6, 23);
 }
 .darkmode input.search-input{
@@ -33,18 +34,64 @@ body{
     background-color: rgb(2, 6, 23);
     opacity: 90%;
 }
+.darkmode h3,
+.darkmode h4,
+.darkmode div.article-information p,
+/* .darkmode div.catalog-of-article a, */
+.darkmode div.catalog-of-article h2{
+    color: rgb(250, 250, 250);
+}
+.darkmode div.catalog-of-article a.list-of-article{
+    color: rgb(226, 232, 240);
+}
+.darkmode div.writter-wrapper h3{
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+.darkmode div.catalog-of-article,
+.darkmode div.featured-wrapper,
+.darkmode div.article-social-btn-wrapper{
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    background-color: rgb(15, 23, 42);
+}
+.darkmode svg.comment-icon path,
+.darkmode svg.share-icon path{
+    fill: rgb(255, 255, 255);
+}
+.darkmode div.article-social-btn-wrapper svg,
+.darkmode svg.heart-icon path,
+.darkmode svg.saved-icon path{
+    stroke: rgb(255, 255, 255);
+}
+.darkmode div.catalog-of-article a:hover,
+.darkmode div.catalog-of-article div:hover{
+    background-color: rgb(35, 43, 62);
+}
 .darkmode a.profile-name,
 .darkmode a.blog-title,
 .darkmode p.profile-skils,
 .darkmode p.profile-followers,
 .darkmode div.footer-links,
-.darkmode span.modal-web{
+.darkmode span.modal-web,
+.darkmode h1.article-title,
+.darkmode span.creator-name,
+.darkmode div.article-social-btn-wrapper button,
+.darkmode div.article-social-btn-wrapper span,
+.darkmode div.subscribe-inp-wrapper h2,
+.darkmode div.writter-wrapper a{
     color: rgb(255, 255, 255);
 }
 .darkmode a.blog-summary,
 .darkmode span.blog-date,
-.darkmode span.blog-time{
+.darkmode span.blog-time,
+.darkmode div.catalog-of-article p,
+.darkmode div.subscribe-inp-wrapper p,
+.darkmode div.writter-wrapper h3{
     color: rgb(148, 163, 184);
+}
+.darkmode div.writter-wrapper button{
+    background-color: rgb(30, 41, 59);
+    color: rgb(203, 213, 225);
+    border: 1px solid rgb(255, 255, 255, 0.1);
 }
 .darkmode footer{
     background-color: rgb(0, 0, 0);
@@ -54,7 +101,8 @@ body{
 .darkmode div.powered-title,
 .darkmode a.place-writer span,
 .darkmode span.copy-right-title,
-.darkmode h2.searchbox-title{
+.darkmode h2.searchbox-title,
+.darkmode div.writter-wrapper p{
     color: rgb(203, 213, 225);
 }
 .darkmode a.place-writer,
@@ -245,7 +293,8 @@ div.social-network-icons a{
     justify-content: center;
 }
 div.social-network-icons a:hover,
-button.tools-btn:hover{
+button.tools-btn:hover,
+div.blog-socials-wrapper a:hover{
     border-radius: 50%;
     background-color: rgb(0, 0, 0, 0.1);
 }
@@ -303,13 +352,13 @@ nav.menu a{
     font-size: 1.7rem;
     padding: 0.5rem 1rem;
 }
-nav.menu a.home-menu{
-    opacity: 1;
-    font-weight: bold;
-}
 nav.menu a:hover{
     border-radius: 0.7rem;
     background-color: rgb(0, 0, 0, 0.1);
+}
+nav.menu a.home-menu{
+    opacity: 1;
+    font-weight: bold;
 }
 .profile-informations{
     display: flex;
@@ -427,7 +476,11 @@ nav.menu a:hover{
     height: 14rem;
     border-radius: 0.7rem;
 }
-.load-more-btn{
+.hidden-posts{
+    display: none;
+}
+.load-more-btn,
+.show-less-btn{
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -437,10 +490,12 @@ nav.menu a:hover{
     border: none;
     cursor: pointer;
 }
-.load-more-btn:hover{
+.load-more-btn:hover,
+.show-less-btn:hover{
     background-color: rgb(240, 240, 240);
 }
-.load-more-title{
+.load-more-title,
+.show-less-title{
     color: rgb(37 99 235);
     font-size: 2rem;
     padding-top: 0.2rem;
@@ -538,7 +593,7 @@ footer{
     opacity: 1;
 }
 .navbar-wrapper{
-    width: 34rem;
+    width: 32rem;
     height: 100%;
     background-color: white;
     display: flex;
@@ -566,6 +621,11 @@ footer{
     padding: 4rem 1.6rem 4rem 3.2rem;
     overflow-y: auto;
 }
+.nav-link-wrapper h2{
+    color: rgb(100, 116, 139);
+    font-size: 1.6rem;
+    margin: 0 0 2rem 0;
+}
 nav.sidebar a{
     width: 100%;
     text-decoration: none;
@@ -577,6 +637,15 @@ nav.sidebar a{
 }
 nav.sidebar a:hover{
     background-color: rgb(240, 240, 240);
+}
+.blog-socials-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.blog-socials-wrapper a{
+    display: flex;
+    padding: 0.8rem;
 }
 .site-logo-page2{
     width: 17.5rem;
@@ -643,9 +712,12 @@ nav.sidebar a:hover{
     color: rgb(71, 85, 105);
     padding: 0.8rem 0;
 }
-.catalog-of-article img{
+.catalog-of-article svg{
     width: 1.2rem;
     height: 1.2rem;
+}
+.catalog-of-article .list-of-article{
+    padding-left: 1rem;
 }
 .article-information{
     width: 80rem;
@@ -726,6 +798,7 @@ nav.sidebar a:hover{
 .writter-wrapper button{
     width: 8rem;
     height: 4rem;
+    font-size: 1.4rem;
     background-color: transparent;
     color: rgb(0, 0, 255);
     border: 1px solid rgb(0, 0, 255);

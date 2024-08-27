@@ -6,6 +6,9 @@ const darkModeBtn = $.querySelector(".darkmode-btn");
 const ChevronDownBtn = $.querySelector(".chevrondown-btn");
 const backSearchModal = $.querySelector(".back-search-modal");
 const backSigninModal = $.querySelector(".back-modal");
+const hiddenPosts = $.querySelector(".hidden-posts");
+const loadMoreBtn = $.querySelector(".load-more-btn");
+const showLessBtn = $.querySelector(".show-less-btn");
 const questionIcon = $.querySelector(".question-icon");
 const pencilIcon = $.querySelector(".pencil-icon");
 const chevronLeftBtn = $.querySelector(".chevronleft-btn");
@@ -14,7 +17,7 @@ const xIconBtn = $.querySelector(".x-icon-btn");
 const blogPostsWrapper = $.querySelector(".blog-posts-wrapper");
 const profileInformationsSection = $.querySelector(".profile-informations-section");
 const overlayNavbar = $.querySelector(".overlay-navbar");
-const navbarWrapper = $.querySelector(".navbar-wrapper")
+const navbarWrapper = $.querySelector(".navbar-wrapper");
 
 
 
@@ -42,19 +45,35 @@ backSearchModal.addEventListener("click", event => {
 
 
 // darkmode started
+function updateIconDarkmode(){
+    const isDarkMode = $.body.classList.contains("darkmode");
+    if(isDarkMode){
+        darkModeBtn.firstChild.src = "../icons/sun.svg"
+    } else {
+        darkModeBtn.firstChild.src = "../icons/moon.svg"
+    }
+}
 function darkMode(){
-   $.body.classList.toggle("darkmode")
+    const isDarkMode = $.body.classList.toggle("darkmode")
    if($.body.classList.contains("darkmode")){
-       darkModeBtn.firstChild.src = "../icons/sun.svg"
        questionIcon.setAttribute("stroke", "#f8fafc");
        pencilIcon.setAttribute("stroke", "#f8fafc");
     } else{
-        darkModeBtn.firstChild.src = "../icons/moon.svg"
         questionIcon.setAttribute("stroke", "#0000004d");
         pencilIcon.setAttribute("stroke", "#0000004d");
     }
+    localStorage.setItem("darkmode", isDarkMode ? "enabled" : "disabled")
+    updateIconDarkmode()
 }
+$.addEventListener("DOMContentLoaded", () => {
+    if(localStorage.getItem("darkmode") === "enabled"){
+        $.body.classList.add("darkmode")
+    }
+    updateIconDarkmode()
+})
 darkModeBtn.addEventListener("click", darkMode)
+
+
 
 
 // sign in modal started
@@ -75,8 +94,20 @@ backSigninModal.addEventListener("click", event => {
         closeSigninModal()
     }
 })
-
 }
+if($.body.classList.contains("main-page")){
+    function showMore(){
+        loadMoreBtn.style.display = "none"
+        hiddenPosts.style.display = "block"
+    }
+    function showLess(){
+        loadMoreBtn.style.display = "block"
+        hiddenPosts.style.display = "none"
+    }
+    loadMoreBtn.addEventListener("click", showMore);
+    showLessBtn.addEventListener("click", showLess);
+}
+
 
 // page2 js code
 
